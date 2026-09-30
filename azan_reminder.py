@@ -98,13 +98,13 @@ def main():
 
     alerts = [
         (asr - timedelta(minutes=30),
-         f"🕌 *Asr Azan in 30 minutes* ({fmt(asr)})\nPray Dhuhr if you haven't yet."),
+         f"🕌 Dhuhr ends in 30 min (Asr Azan at {fmt(asr)})"),
         (asr - timedelta(minutes=10),
-         f"⏰ *Only 10 minutes left for Dhuhr!*\nAsr Azan at {fmt(asr)}."),
+         f"⏰ Dhuhr ends in 10 min (Asr Azan at {fmt(asr)})"),
         (maghrib - timedelta(minutes=30),
-         f"🕌 *Maghrib Azan in 30 minutes* ({fmt(maghrib)})\nPray Asr if you haven't yet."),
+         f"🕌 Asr ends in 30 min (Maghrib Azan at {fmt(maghrib)})"),
         (maghrib - timedelta(minutes=10),
-         f"⏰ *Only 10 minutes left for Asr!*\nMaghrib Azan at {fmt(maghrib)}."),
+         f"⏰ Asr ends in 10 min (Maghrib Azan at {fmt(maghrib)})"),
     ]
 
     for when, message in alerts:
