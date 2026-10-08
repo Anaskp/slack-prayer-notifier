@@ -1,11 +1,6 @@
 name: Azan Reminder
 
 on:
-  schedule:
-    # 08:30 UTC = 2:00 PM IST, Monday to Friday.
-    # GitHub may start scheduled jobs a few minutes late, so we start early;
-    # the script waits until each exact alert time.
-    - cron: "30 8 * * 1-5"
   workflow_dispatch:
     inputs:
       test_now:
